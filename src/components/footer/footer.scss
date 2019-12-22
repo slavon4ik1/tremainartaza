@@ -1,0 +1,55 @@
+.footer {
+  background-color: #000;
+  font-family: 'ProximaNova';
+  &__info {
+    width: 90%;
+    margin: 0 auto;
+    p {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: block;
+      text-align: center;
+      line-height: 2;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    a {
+      padding-left: 10px;
+      color: #ffffff;
+      text-decoration: none; 
+    }
+  }
+  &__link {
+    &::before {
+      display: none;
+      position: absolute;
+      content: 'EMAIL';
+    }  
+  }
+}
+#top {
+  display: none;
+  
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+
+  .footer {
+    &__link {
+      visibility: hidden;
+      &::before {
+        visibility: visible;
+        display: inline-block;
+        position: absolute;
+        content: 'EMAIL';
+        left: 50%;
+        transform: translateX(-50%);
+      }  
+    }
+  }
+  #top {
+    display: inline-block;
+  }
+}

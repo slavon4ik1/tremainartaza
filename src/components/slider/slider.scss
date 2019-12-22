@@ -1,0 +1,22 @@
+.slider {
+  
+display: none;
+}
+.mt {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    display: flex;
+  
+    &__img-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+     
+    }
+    margin-bottom: 30px;
+  }
+}
